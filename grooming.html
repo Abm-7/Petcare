@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grooming</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <style>
+        .navbar {
+          background-color: #87ceeb;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        .navbar-brand img {
+          width: 80px;
+          height: auto;
+        }
+    
+        .navbar-toggler {
+          border-color: transparent;
+        }
+    
+        .navbar-nav .nav-item .nav-link {
+          color: grey;
+          font-weight: bold;
+          transition: all 0.3s ease;
+        }
+    
+        .navbar-nav .nav-item .nav-link:hover {
+          color: #0056b3;
+        }
+    
+        .dropdown-menu {
+          background-color: #87ceeb;
+        }
+    
+        .dropdown-item {
+          color: gray;
+        }
+    
+        .dropdown-item:hover {
+          background-color: #0069d9;
+        }
+    
+        .form-control {
+          border-color: grey;
+        }
+    
+        .btn-outline-info {
+          color: grey;
+          border-color: #fff;
+        }
+    
+        .btn-outline-info:hover {
+          color: #0069d9;
+          background-color: #fff;
+          border-color: #0069d9;
+        }
+        .form-inline {
+          justify-content: flex-end;
+        }
+    
+        .form-inline .input-group {
+          margin-right: 30px;
+        }
+    
+        .navbar-nav .nav-item {
+          margin-right: 20px;
+        }
+        img{
+          height: 380px;
+        }
+      </style>
+      <body>
+        <nav class="navbar navbar-expand-sm" style="background-color: lightblue">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" target="_blank">
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+                alt="logo"
+                style="width: 80px; height: 60px"
+                class="rounded-pill"
+              />
+            </a>
+    
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"> </span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="collapsibleNavbar"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >Pet Care Tips</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="nutrition.html"> Nutrition</a></li>
+                    <li><a class="dropdown-item" href="grooming.html">Grooming</a></li>
+                    <li><a class="dropdown-item" href="training.html">Training</a></li>
+    
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.thepetexpress.co.uk/blog/general-interest/6-of-the-best-pet-blogs">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >Different pets</a
+                  >
+    
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="dog.html"> Dogs</a></li>
+                    <li><a class="dropdown-item" href="cat.html">Cats</a></li>
+                    <li><a class="dropdown-item" href="bird.html">Birds</a></li>
+    
+                    <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+    
+                    <li><a class="dropdown-item" href="reptiles.html">Reptiles </a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Log In</a>
+                </li>
+              </ul>
+              <!-- Search Form -->
+              <form class="form-inline my-2 my-lg-0 ml-auto">
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-info" type="submit">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+      <h1 class="text-center mb-4">Pet Grooming Tips</h1>
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row">
+            
+              <p>
+                
+                Pet grooming is an essential aspect of pet care that involves maintaining your pet's physical appearance and overall hygiene. Regular grooming not only keeps your pet looking their best but also helps prevent health issues such as matting, skin infections, and ear problems. Understanding the key components of pet grooming can help you establish a grooming routine that meets your pet's needs.</p>
+          
+            
+          </div>
+        </div>
+      </section>
+      <div class="row">
+        <!-- Grooming Tip 1 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="https://www.mercurynews.com/wp-content/uploads/2020/06/SJM-L-PETBRUSHES-0602-01_74646311.jpg?w=1024"
+              class="card-img-top"
+              alt="Grooming Tip 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brushing</h5>
+              <p class="card-text">
+                <ul>
+                  <li>Brushing your pet's coat regularly helps remove loose fur, dirt, and tangles, preventing mats and reducing shedding. The frequency of brushing depends on your pet's breed, coat type, and length. Long-haired pets may require daily brushing, while short-haired breeds may only need it a few times a week.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grooming Tip 2 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod/images/how-to-bathe-dog-1587137329.jpg"
+              class="card-img-top"
+              alt="Grooming Tip 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bathing</h5>
+              <p class="card-text">
+                <ul>
+                <li>Bathing your pet as needed helps keep their coat clean and free of dirt, odors, and bacteria. Use a mild, pet-specific shampoo that is gentle on their skin and won't strip away natural oils. The frequency of bathing depends on your pet's lifestyle and coat condition, but generally, most pets benefit from a bath every 4-6 weeks.
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--3-->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img
+              src="https://iworkdogs.com/wp-content/uploads/2017/04/iStock_000043337876_Large-1.jpg"
+              class="card-img-top"
+              alt="Grooming Tip 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nail Trimming</h5>
+              <p class="card-text">
+                <ul>
+                <li>Regular nail trimming is important to prevent overgrowth, which can lead to discomfort, difficulty walking, and even injury. Use pet-specific nail clippers and trim your pet's nails carefully, avoiding the quick, which contains blood vessels and nerves. The frequency of nail trimming varies depending on your pet's activity level and the rate of nail growth.
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+<!--4-->
+<div class="col-md-6">
+  <div class="card mb-4">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/3_1c35131a-9ecf-410c-b0e9-e371de043599.jpg?v=1647845512"
+      class="card-img-top"
+      alt="Grooming Tip 4"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Ear Cleaning</h5>
+      <p class="card-text">
+        <ul>
+        <li>Checking and cleaning your pet's ears regularly helps prevent ear infections and wax buildup. Use a veterinarian-approved ear cleaner and cotton balls to gently wipe the outer ear, avoiding inserting anything into the ear canal. Signs of ear problems include redness, swelling, discharge, or a foul odor, which may indicate an infection that requires veterinary attention.
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div><!-- Grooming Tip 5 -->
+<div class="col-md-6">
+  <div class="card mb-4">
+    <img
+      src="https://www.northshorevet.com.au/wp-content/uploads/2022/06/the-importance-of-dental-care-for-your-pet-.jpg"
+      class="card-img-top"
+      alt="Grooming Tip 5"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Dental Care</h5>
+      <p class="card-text">
+        <ul>
+          <li>Dental care is an essential part of pet grooming to prevent dental disease and maintain oral health. Brush your pet's teeth regularly using a pet-specific toothbrush and toothpaste, and provide dental chews or toys to help reduce plaque and tartar buildup. Your veterinarian may also recommend professional dental cleanings as needed to keep your pet's teeth clean and healthy.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Grooming Tip 6 -->
+<div class="col-md-6">
+  <div class="card mb-4">
+    <img
+      src="https://www.angiesmobilepetstyling.com/wp-content/uploads/2023/07/3.jpg"
+      class="card-img-top"
+      alt="Grooming Tip 6"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Fur Trimming</h5>
+      <p class="card-text">
+        <ul>
+        <li>Trimming your pet's fur, particularly around the eyes, ears, and paws, helps prevent irritation, matting, and hygiene issues. Use pet grooming scissors or clippers and be cautious not to cut too close to the skin. For pets with long or thick fur, consider professional grooming services to ensure a safe and even trim.
+
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+<!--7-->
+<div class="col-md-6">
+  <div class="card mb-4">
+    <img
+      src="https://www.adamspetcare.com/-/media/project/oneweb/adams/images/photos/blog/article/how-do-i-know-if-my-dog-has-fleas.jpg"
+      class="card-img-top"
+      alt="Grooming Tip 7"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Skin Inspection</h5>
+      <p class="card-text">
+        <ul>
+        <li>Regularly inspect your pet's skin for signs of fleas, ticks, dryness, or irritation. Look for redness, rashes, sores, or unusual lumps that may indicate underlying health issues. If you notice any concerning changes, consult your veterinarian for further evaluation and treatment.
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+<!--8-->
+<div class="col-md-6">
+<div class="card mb-4">
+<img
+src="https://www.wikihow.com/images/thumb/7/7e/Express-a-Dog%27s-Anal-Gland-Step-1-Version-5.jpg/v4-460px-Express-a-Dog%27s-Anal-Gland-Step-1-Version-5.jpg.webp"
+class="card-img-top"
+alt="Grooming Tip 4"
+/>
+<div class="card-body">
+<h5 class="card-title"> Anal Gland Expression</h5>
+<p class="card-text">
+<ul>
+<li>Some pets may require periodic expression of their anal glands to prevent impaction or infection. This procedure should only be performed by a veterinarian or professional groomer, as improper expression can cause injury or discomfort.
+</li>
+</ul>
+</p>
+</div>
+</div> </div>
+<!--9-->
+<div class="col-md-6">
+  <div class="card mb-4">
+    <img
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8TDYFZ-4YluSoxZrfZmsMYT1A8LhAIi99Qfe9IjPhlmDLM-g2SQvvzq6cC2G-9uGm1Ezw68d6SrIJCZwc4BcUhadfleyxeFcqYUQPIx00WIg0jt-k1BdLQoU8VCfgRigmn6AvrPgd1Bs/w1200-h630-p-k-no-nu/positive-reinforcement-pupp.jpg"
+      class="card-img-top"
+      alt="Grooming Tip 9"
+    />
+    <div class="card-body">
+      <h5 class="card-title"> Positive Reinforcement</h5>
+      <p class="card-text">
+        <ul>
+        <li>Make grooming a positive experience for your pet by offering treats, praise, and gentle handling. Take breaks if your pet becomes anxious or agitated, and gradually introduce them to grooming tools and procedures to build their confidence and trust.
+        </li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+<!--10-->
+<div class="col-md-6">
+<div class="card mb-4">
+<img
+src="https://pawpurrfect.co/wp-content/uploads/2023/02/1-900x600-1-900x600-1-900x600.jpg"
+class="card-img-top"
+alt="Grooming Tip 10"
+/>
+<div class="card-body">
+<h5 class="card-title">  Professional Grooming</h5>
+<p class="card-text">
+<ul>
+<li>Consider scheduling regular appointments with a professional groomer for services such as haircuts, deshedding treatments, and specialty grooming needs. Professional groomers have the expertise and equipment to ensure your pet's grooming experience is safe, comfortable, and tailored to their specific needs.
+</li>
+</ul>
+</p>
+</div>
+</div> </div>
+      </div>
+    </main>
+
+    <footer class=" text-light text-center py-3 mt-5" style="background-color: lightblue;">
+      <div class="container">
+        <p>&copy; 2024 YourPetCare. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

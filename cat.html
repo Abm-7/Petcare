@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Care Tips</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      .tip-card {
+        border: 2px solid #343a40;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .tip-card:hover {
+        transform: scale(1.05);
+      }
+
+      .tip-image {
+        width: 100%;
+        height: 450px; /* Adjust the height as needed */
+        object-fit: cover;
+      }
+
+      .tip-details {
+        padding: 20px;
+      }
+
+      .tip-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .tip-description {
+        font-size: 16px;
+        color: #6c757d;
+      }
+      .navbar {
+        background-color: #87ceeb;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand img {
+        width: 80px;
+        height: auto;
+      }
+
+      .navbar-toggler {
+        border-color: transparent;
+      }
+
+      .navbar-nav .nav-item .nav-link {
+        color: grey;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover {
+        color: #0056b3;
+      }
+
+      .dropdown-menu {
+        background-color: #87ceeb;
+      }
+
+      .dropdown-item {
+        color: gray;
+      }
+
+      .dropdown-item:hover {
+        background-color: #0069d9;
+      }
+
+      .form-control {
+        border-color: grey;
+      }
+
+      .btn-outline-info {
+        color: grey;
+        border-color: #fff;
+      }
+
+      .btn-outline-info:hover {
+        color: #0069d9;
+        background-color: #fff;
+        border-color: #0069d9;
+      }
+      .form-inline {
+        justify-content: flex-end;
+      }
+
+      .form-inline .input-group {
+        margin-right: 30px;
+      }
+
+      .navbar-nav .nav-item {
+        margin-right: 20px;
+      }
+      .carousel-item img {
+        max-height: 600px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .btn-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        transform: translate(-50);
+      }
+      .card img {
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm" style="background-color: lightblue">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" target="_blank">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+              alt="logo"
+              style="width: 80px; height: 60px"
+              class="rounded-pill"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Pet Care Tips</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="nutrition.html">
+                      Nutrition</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="grooming.html">Grooming</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="training.html">Training</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.thepetexpress.co.uk/blog/general-interest/6-of-the-best-pet-blogs/"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Different pets</a
+                >
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dog.html"> Dogs</a></li>
+                  <li><a class="dropdown-item" href="cat.html">Cats</a></li>
+                  <li><a class="dropdown-item" href="bird.html">Birds</a></li>
+
+                  <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="reptiles.html">Reptiles </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+            </ul>
+            <!-- Search Form -->
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-outline-info" type="submit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      <h1 class="text-center mb-4">Cat Care Tips</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://www.uniquelycats.com/blog/wp-content/uploads/2017/06/CatNutrition.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Nutrition</h2>
+              <p class="tip-description">
+                Providing your cat with a balanced diet is essential for their
+                overall health and well-being. Choose a high-quality cat food
+                that is appropriate for their age, size, and activity level.
+                Ensure that their diet includes a mix of protein, carbohydrates,
+                fats, vitamins, and minerals. Avoid feeding your cat table
+                scraps or foods that may be toxic to them, and always provide
+                access to fresh, clean water.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://lirp.cdn-website.com/fec5773e/dms3rep/multi/opt/529121920-1-640w.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Veterinary Care</h2>
+              <p class="tip-description">
+                Regular veterinary check-ups are essential for monitoring your
+                cat's health and detecting any potential issues early. Schedule
+                annual wellness exams for adult cats and more frequent visits
+                for kittens, seniors, or those with underlying health
+                conditions. Keep your cat up to date on vaccinations, flea,
+                tick, and heartworm preventives, and discuss any concerns or
+                changes in your cat's health with your veterinarian promptly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://unionlakepetservices.com/wp-content/uploads/2020/07/ULPS-Cat-grooming-AdobeStock_313891439-1080x675.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Grooming</h2>
+              <p class="tip-description">
+                Regular grooming helps keep your cat's coat clean, healthy, and
+                free of mats and tangles. Brush your cat's coat regularly to
+                remove loose fur, dirt, and debris, and bathe them as needed
+                using a mild, cat-specific shampoo. Trim your cat's nails
+                regularly to prevent overgrowth and potential injury, and clean
+                their ears and teeth to maintain good oral and ear health.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://www.aspca.org/sites/default/files/cat-care_litter-box-problems_main-image1_0.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Litter Box Care</h2>
+              <p class="tip-description">
+                Mental stimulation is essential for preventing boredom and
+                behavioral problems in dogs. Provide enrichment activities such
+                as puzzle toys, interactive games, and training sessions to keep
+                your dog's mind engaged and stimulated. Rotate toys regularly to
+                keep things interesting and offer opportunities for exploration
+                and problem-solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://www.preventivevet.com/hs-fs/hubfs/kitty%20cot%20cat%20perch%20to%20attach%20to%20window.jpg?width=350&name=kitty%20cot%20cat%20perch%20to%20attach%20to%20window.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Environmental Enrichmen</h2>
+              <p class="tip-description">
+                Cats thrive in environments that provide opportunities for
+                mental and physical stimulation. Offer a variety of toys,
+                scratching posts, climbing structures, and hiding spots to keep
+                your cat entertained and engaged. Rotate toys regularly to
+                prevent boredom and provide opportunities for exploration and
+                play.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://media1.popsugar-assets.com/files/thumbor/U7z0p2qB2QOjAkmFjMPQkeMqXwg=/fit-in/828x1500/filters:format_auto():extract_cover():upscale()/2020/09/23/847/n/47066576/tmp_SaGc2c_2bd7803dfa29627d_GettyImages-459759125.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Socialization</h2>
+              <p class="tip-description">
+                While cats are often seen as independent creatures, they still
+                benefit from social interaction and companionship. Spend quality
+                time with your cat, offering plenty of affection, playtime, and
+                bonding opportunities. Respect your cat's boundaries and
+                preferences, and provide opportunities for socialization with
+                other cats or pets if desired.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="text-light text-center py-3 mt-5"
+      style="background-color: lightblue"
+    >
+      <div class="container" style="background-color: lightblue">
+        <p>&copy; 2024 ABM Pet Care Tip Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

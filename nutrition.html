@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <style>
+    .navbar {
+      background-color: #87ceeb;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+      width: 80px;
+      height: auto;
+    }
+
+    .navbar-toggler {
+      border-color: transparent;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      color: grey;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #0056b3;
+    }
+
+    .dropdown-menu {
+      background-color: #87ceeb;
+    }
+
+    .dropdown-item {
+      color: gray;
+    }
+
+    .dropdown-item:hover {
+      background-color: #0069d9;
+    }
+
+    .form-control {
+      border-color: grey;
+    }
+
+    .btn-outline-info {
+      color: grey;
+      border-color: #fff;
+    }
+
+    .btn-outline-info:hover {
+      color: #0069d9;
+      background-color: #fff;
+      border-color: #0069d9;
+    }
+    .form-inline {
+      justify-content: flex-end;
+    }
+
+    .form-inline .input-group {
+      margin-right: 30px;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 20px;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-sm" style="background-color: lightblue">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" target="_blank">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+            alt="logo"
+            style="width: 80px; height: 60px"
+            class="rounded-pill"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Pet Care Tips</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="nutrition.html"> Nutrition</a></li>
+                <li><a class="dropdown-item" href="grooming.html">Grooming</a></li>
+                <li><a class="dropdown-item" href="training.html">Training</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.thepetexpress.co.uk/blog/general-interest/6-of-the-best-pet-blogs">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Pet Care Tips</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="dog.html"> Dogs</a></li>
+                <li><a class="dropdown-item" href="cat.html">Cats</a></li>
+                <li><a class="dropdown-item" href="bird.html">Birds</a></li>
+
+                <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+
+                <li><a class="dropdown-item" href="reptiles.html">Reptiles </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resourses.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+          </ul>
+          <!-- Search Form -->
+          <form class="form-inline my-2 my-lg-0 ml-auto">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-outline-info" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main class="container mt-4">
+      <h1 class="text-center mb-4">Understanding Pet Nutrition</h1>
+      
+      <div class="contain' text-center "><img src="https://img.oercommons.org/780x780/microsite-vadoe-prod/media/courseware/lesson/image/6-Diseases-That-Proper-Nutrition-Prevents_379_40044310_0_14113110_728_gfycXep.jpg" alt="" width="400px" class="text-center"></div>
+      <div class="container">
+        
+        <p>
+          Proper nutrition is fundamental to the health and well-being of your
+          pet. Just like humans, pets require a balanced diet that provides
+          essential nutrients to support their growth, development, and overall
+          health. Understanding the key components of pet nutrition can help you
+          make informed decisions about your pet's diet and ensure they receive
+          the nutrients they need to thrive.
+        </p>
+      </div>
+      <div class="accordion" id="nutritionAccordion">
+        <!-- Macronutrients -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="macronutrientsHeading">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#macronutrientsCollapse"
+              aria-expanded="true"
+              aria-controls="macronutrientsCollapse"
+            >
+              1. Macronutrients
+            </button>
+          </h2>
+          <div
+            id="macronutrientsCollapse"
+            class="accordion-collapse collapse show"
+            aria-labelledby="macronutrientsHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <strong>Protein:</strong> Protein is essential for building
+                  and repairing tissues, supporting immune function, and
+                  maintaining healthy skin and coat. High-quality sources of
+                  protein include meat, poultry, fish, and eggs.
+                </li>
+                <li>
+                  <strong>Carbohydrates:</strong> Carbohydrates provide energy
+                  and fiber, supporting digestive health and providing a source
+                  of glucose for energy. Good sources of carbohydrates for pets
+                  include grains, vegetables, and fruits.
+                </li>
+                <li>
+                  <strong>Fats:</strong> Fats are concentrated sources of energy
+                  and provide essential fatty acids necessary for skin health,
+                  coat condition, and nutrient absorption. Omega-3 and Omega-6
+                  fatty acids are particularly important for pets and can be
+                  found in fish oil, flaxseed oil, and certain plant oils.
+                </li>
+              </li>
+              </ul>
+              <img
+                  src="https://avitahealth.org/wp-content/uploads/2022/03/macronutrients.jpg"
+                  alt="" style="margin-left: 50px;" width="500px"
+                />
+            </div>
+          </div>
+        </div>
+
+        <!-- Micronutrients -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="micronutrientsHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#micronutrientsCollapse"
+              aria-expanded="false"
+              aria-controls="micronutrientsCollapse"
+            >
+              2. Micronutrients
+            </button>
+          </h2>
+          <div
+            id="micronutrientsCollapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="micronutrientsHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <strong>Vitamins:</strong> Vitamins play a crucial role in
+                  various physiological processes, including metabolism, immune
+                  function, and vision. Essential vitamins for pets include
+                  Vitamin A, Vitamin D, Vitamin E, and the B-complex vitamins.
+                </li>
+                <li>
+                  <strong>Minerals:</strong> Minerals are necessary for bone
+                  health, muscle function, and overall growth and development.
+                  Common minerals found in pet food include calcium, phosphorus,
+                  magnesium, potassium, and iron.
+                </li>                          
+              </ul>
+              <img
+              src="https://www.elitecarehc.com/wp-content/uploads/2023/10/EliteCare-SubBlog-2-01-09-2023.jpg.webp"
+              alt="" style="margin-left: 50px;" width="500px"
+            />
+            </div>
+          </div>
+        </div>
+
+        <!-- Water -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="waterHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#waterCollapse"
+              aria-expanded="false"
+              aria-controls="waterCollapse"
+            >
+              3. Water
+            </button>
+          </h2>
+          <div
+            id="waterCollapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="waterHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <p>
+                    Water is essential for all living creatures, including pets.
+                    It plays a vital role in regulating body temperature, aiding
+                    digestion, transporting nutrients, and eliminating waste
+                    products. Make sure your pet has access to clean, fresh
+                    water at all times to prevent dehydration.
+                  </p>
+                  <img
+                  src="https://assets-au-01.kc-usercontent.com/ab37095e-a9cb-025f-8a0d-c6d89400e446/2a624930-dad5-4a4f-b222-2584f3db8b7d/article-how-to-keep-your-pets-water-clean.jpg"
+                  alt="" style="margin-left: 50px;" width="500px"
+                />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dietary Considerations -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="dietaryConsiderationsHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#dietaryConsiderationsCollapse"
+              aria-expanded="false"
+              aria-controls="dietaryConsiderationsCollapse"
+            >
+              4. Dietary Considerations
+            </button>
+          </h2>
+          <div
+            id="dietaryConsiderationsCollapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="dietaryConsiderationsHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  <strong>Life Stage:</strong> Pets have different nutritional
+                  needs at various life stages. Puppies and kittens require
+                  higher levels of protein and calories for growth, while senior
+                  pets may benefit from lower-calorie diets with added joint
+                  support.
+                </li>
+                <li>
+                  <strong>Breed and Size:</strong> Large breed dogs have
+                  different nutritional requirements than small breed dogs,
+                  particularly when it comes to calcium and phosphorus levels to
+                  support bone health. Choose a diet formulated for your pet's
+                  specific breed and size.
+                </li>
+                <li>
+                  <strong>Health Conditions:</strong> Some pets may have
+                  specific dietary needs due to health conditions such as
+                  allergies, obesity, diabetes, or kidney disease. Consult your
+                  veterinarian for personalized nutritional advice and dietary
+                  recommendations.
+                </li>
+              </ul>
+              <img
+                  src="https://www.ezcater.com/lunchrush/wp-content/uploads/sites/2/2019/09/EZC-18-69-Accomodating-Dietary-Restrictions-social-art-39-1.png"
+                  alt="" style="margin-left: 50px;" width="500px"
+                />
+            </div>
+          </div>
+        </div>
+        <!--Reading Pet Food Labels-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="ReadingPetFoodLabelsHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ReadingPetFoodLabels"
+              aria-expanded="false"
+              aria-controls="ReadingPetFoodLabelsCollapse"
+            >
+              5. Reading Pet Food Labels
+            </button>
+          </h2>
+          <div
+            id="ReadingPetFoodLabels"
+            class="accordion-collapse collapse"
+            aria-labelledby="ReadingPetFoodLabelsHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+               
+                <li>
+                  <p>When switching your pet's food, do so gradually over the course of about a week to avoid digestive upset. Start by mixing a small amount of the new food with their current food, gradually increasing the proportion of the new food while decreasing the old food.</p>
+                </li>
+              </ul>
+              <img
+                  src="https://images.squarespace-cdn.com/content/v1/5b631cba5b409b413bb3a633/1533669519950-4TH9O9OTRMMCZEC0J6T7/pedigree-pet-food-label.jpg?format=1500w"
+                  alt="" style="margin-left: 50px;" width="500px"
+                />
+            </div>
+          </div>
+        </div>
+        <!--Reading Pet Food Labels-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="TransitioningDietsHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#TransitioningDiets"
+              aria-expanded="false"
+              aria-controls="TransitioningDietsCollapse"
+            >
+              6. Transitioning Diets
+            </button>
+          </h2>
+          <div
+            id="TransitioningDiets"
+            class="accordion-collapse collapse"
+            aria-labelledby="TransitioningDietsHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+               
+                <li>
+                  <p>When switching your pet's food, do so gradually over the course of about a week to avoid digestive upset. Start by mixing a small amount of the new food with their current food, gradually increasing the proportion of the new food while decreasing the old food.</p>
+                </li>
+              </ul>
+              <img
+                  src="https://www.petbarn.com.au/petspot/app/uploads/2017/02/FoodTransition-mobile.jpg"
+                  alt="" style="margin-left: 50px;" width="500px"
+                />
+            </div>
+          </div>
+        </div>
+        <!--Reading Pet Food Labels-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="ConsultYourVeterinarianHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#ConsultYourVeterinarian"
+              aria-expanded="false"
+              aria-controls="ConsultYourVeterinarianCollapse"
+            >
+            7. Consult Your Veterinarian
+            </button>
+          </h2>
+          <div
+            id="ConsultYourVeterinarian"
+            class="accordion-collapse collapse"
+            aria-labelledby="ConsultYourVeterinarianHeading"
+            data-bs-parent="#nutritionAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+               
+                <li>
+                  <p>Your veterinarian is your best resource for personalized nutritional advice for your pet. They can recommend specific diets based on your pet's health status, address any dietary concerns, and provide guidance on weight management if needed.</p>
+                </li>
+              </ul>
+              <img
+                  src="https://toegrips.com/wp-content/uploads/vegetablesdogscaneat2FB.jpg"
+                  alt="" style="margin-left: 50px;" width="500px"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="text-light text-center py-3 mt-5"
+      style="background-color: lightblue"
+    >
+      <div class="container" style="background-color: lightblue;">
+        <p>&copy; 2024  ABM Pet Care Tip Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

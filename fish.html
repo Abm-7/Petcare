@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fish Care Tips</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      .tip-card {
+        border: 2px solid #343a40;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .tip-card:hover {
+        transform: scale(1.05);
+      }
+
+      .tip-image {
+        width: 100%;
+        height: 450px; /* Adjust the height as needed */
+        object-fit: cover;
+      }
+
+      .tip-details {
+        padding: 20px;
+      }
+
+      .tip-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .tip-description {
+        font-size: 16px;
+        color: #6c757d;
+      }
+      .navbar {
+        background-color: #87ceeb;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand img {
+        width: 80px;
+        height: auto;
+      }
+
+      .navbar-toggler {
+        border-color: transparent;
+      }
+
+      .navbar-nav .nav-item .nav-link {
+        color: grey;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover {
+        color: #0056b3;
+      }
+
+      .dropdown-menu {
+        background-color: #87ceeb;
+      }
+
+      .dropdown-item {
+        color: gray;
+      }
+
+      .dropdown-item:hover {
+        background-color: #0069d9;
+      }
+
+      .form-control {
+        border-color: grey;
+      }
+
+      .btn-outline-info {
+        color: grey;
+        border-color: #fff;
+      }
+
+      .btn-outline-info:hover {
+        color: #0069d9;
+        background-color: #fff;
+        border-color: #0069d9;
+      }
+      .form-inline {
+        justify-content: flex-end;
+      }
+
+      .form-inline .input-group {
+        margin-right: 30px;
+      }
+
+      .navbar-nav .nav-item {
+        margin-right: 20px;
+      }
+      .carousel-item img {
+        max-height: 600px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .btn-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        transform: translate(-50);
+      }
+      .card img {
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm" style="background-color: lightblue">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" target="_blank">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+              alt="logo"
+              style="width: 80px; height: 60px"
+              class="rounded-pill"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Pet Care Tips</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="nutrition.html">
+                      Nutrition</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="grooming.html">Grooming</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="training.html">Training</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.thepetexpress.co.uk/blog/general-interest/6-of-the-best-pet-blogs/">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Different pets</a
+                >
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="dog.html"> Dogs</a></li>
+                  <li><a class="dropdown-item" href="cat.html">Cats</a></li>
+                  <li><a class="dropdown-item" href="bird.html">Birds</a></li>
+
+                  <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="reptiles.html">Reptiles </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+            </ul>
+            <!-- Search Form -->
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-outline-info" type="submit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      <h1 class="text-center mb-4">Fish Care Tips</h1>
+      <div class="row">
+        <div class="col-md-6 d-block m-auto">
+          <div class="tip-card">
+            
+            <div class="tip-details">
+              <p >Fish are captivating and serene pets that bring beauty and tranquility to any home. Proper care is essential for ensuring their health and well-being. From selecting the right tank and maintaining water quality to providing appropriate nutrition and monitoring health, there are several key components to consider when it comes to fish care.Let's explore each aspect in detail:
+              </p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://us.123rf.com/450wm/pundapanda/pundapanda2310/pundapanda231000120/214516931-aquarium-fish-guppy-swim-among-algae-and-stones-corrals-and-underwater-plants-in-an-aquarium.jpg?ver=6"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Tank Setup</h2>
+              <p class="tip-description">
+                Choosing the right tank is the first step in fish care. Ensure the tank is large enough to accommodate the species and number of fish you plan to keep. A good rule of thumb is one gallon of water per inch of fish. Equip the tank with a reliable filter, heater (if needed), and proper lighting. Include decorations, plants, and hiding spots to mimic the natural environment and provide a sense of security for your fish.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://www.thesprucepets.com/thmb/f1rrkxO0Yd0iakPDNubtoedT40I=/2121x0/filters:no_upscale():strip_icc()/girl-using-a-chemical-test-kit-to-measure-the-quality-of-water-in-a-home-aquarium-993654204-5c3abb2d46e0fb000122bad6.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Water Quality</h2>
+              <p class="tip-description">
+                Maintaining optimal water quality is crucial for your fish's health. Regularly test the water for parameters such as pH, ammonia, nitrite, and nitrate levels. Perform partial water changes (about 20-30% of the tank volume) weekly to keep the water clean and free from harmful toxins. Use a dechlorinator to remove chlorine and chloramine from tap water before adding it to the tank.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://media-be.chewy.com/wp-content/uploads/2022/09/21103653/how-to-clean-a-fish-tank.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Tank Maintenance</h2>
+              <p class="tip-description">
+                Regular tank maintenance is crucial for keeping your fish healthy. Clean the tank glass, decorations, and substrate to prevent algae buildup and maintain a clean environment. Check the filter regularly and clean or replace filter media as needed. Monitor the tank's temperature, lighting, and water parameters to ensure they remain within optimal ranges for your fish species.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://www.wikihow.com/images/thumb/3/3f/Acclimate-a-Fish-Step-7-Version-3.jpg/v4-460px-Acclimate-a-Fish-Step-7-Version-3.jpg.webp"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Acclimation</h2>
+              <p class="tip-description">
+                Proper acclimation is crucial when introducing new fish to your tank. Float the sealed bag containing the new fish in the tank for 15-30 minutes to equalize the temperature. Gradually mix small amounts of tank water into the bag over an hour before gently releasing the fish into the tank. This process helps reduce stress and prevent shock from sudden changes in water conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+            src="https://m.media-amazon.com/images/I/71XDhcd1aUL.jpg"
+            alt="Tip" class="tip-image" />
+            <div class="tip-details">
+              <h2 class="tip-title">Filtration and Aeration</h2>
+              <p class="tip-description">
+                A good filtration system is essential for keeping the tank water clean and oxygenated. Choose a filter appropriate for your tank size and fish species. In addition to mechanical filtration, consider biological and chemical filtration to remove harmful substances. Ensure adequate aeration by using air pumps or aeration devices to maintain proper oxygen levels in the water.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tip-card">
+            <img
+              src="https://www.cavendish.ac/wp-content/uploads/2020/06/fish_feed_1170-2.jpg"
+              alt="Tip"
+              class="tip-image"
+            />
+            <div class="tip-details">
+              <h2 class="tip-title">Nutrition</h2>
+              <p class="tip-description">
+                Providing a balanced diet is essential for your fish's health and growth. Choose high-quality fish food designed for your specific fish species, whether flakes, pellets, or specialized diets. Supplement their diet with occasional treats such as live, frozen, or freeze-dried foods like brine shrimp, bloodworms, or daphnia. Avoid overfeeding, as uneaten food can pollute the water and harm your fish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="text-light text-center py-3 mt-5"
+      style="background-color: lightblue"
+    >
+      <div class="container" style="background-color: lightblue">
+        <p>&copy; 2024 ABM Pet Care Tip Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
